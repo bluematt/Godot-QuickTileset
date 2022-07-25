@@ -9,7 +9,7 @@ extends TileMap
 ###
 ### Version: 0.1.0
 ### Author: <paradrogue@gmail.com>
-### URL: 
+### URL: https://github.com/paradrogue/Godot-QuickTileset
 ###
 ### See LICENSE.md for licensing.
 ### ---------------------------------------------------------------------------

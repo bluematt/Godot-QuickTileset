@@ -39,7 +39,6 @@ func _init() -> void:
 
 	# Connect signals
 	_connect_setting_signal()
-#	_connect_signals()
 
 	if tile_set:
 		push_warning(tr("QuickTileset: A TileSet already exists in this TileMap. This will be overridden if any changes are made."))

@@ -1,6 +1,6 @@
 # QuickTileset (for Godot)
 
-A quick and dirty script for creating complete Godot `TileSet`s without the hours of endless clicking.
+A quick and dirty script for creating complete [Godot](https://godotengine.org/) `TileSet`s without the hours of endless clicking.
 
 Version: 0.1.0
 
@@ -10,7 +10,7 @@ License: MIT
 
 ## Background
 
-I needed a quick way of trying out various pre-made tile sets, but constructing them by hand in the Godot editor was tedious and error prone.
+I needed a quick way of trying out various pre-made tile sets (such as the [large](https://www.kenney.nl/assets/bit-pack) [sets](https://www.kenney.nl/assets/micro-roguelike) produced by [Kenney](https://www.kenney.nl/)) but constructing them by hand in the Godot editor was tedious and error prone.
 
 This script takes a texture containing a tile set, configure the cell size (and optional offset and per-cell padding) and it will quickly (and automatically) create a full `TileSet` of all tiles in the texture, which is then added to the `TileMap` node.
 
@@ -33,6 +33,7 @@ This script takes a texture containing a tile set, configure the cell size (and 
 - A *soft* limit of 1024 tiles is in place.  This is to prevent system lockup as the generator script uses the main Godot thread. This limit can be customised and disabled if required.  Use with caution.
 - If the cell size cannot be determined from the filename, the last-used cell size will remain.  This can be customised.
 - No collisions, occlusion, navigation, *etc.* are generated.
+- Rectangular 2D tiles only.
 - Only tested with the following versions of Godot Engine:
   - 3.4.4.stable (MacOS)
 

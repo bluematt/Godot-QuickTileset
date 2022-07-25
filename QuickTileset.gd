@@ -102,7 +102,7 @@ func _refresh_tileset() -> void:
 			tile_set.tile_set_texture(index, _texture)
 			# Calculate the Rect2 representing the region
 			# of the texture.
-			var rect := Rect2(_offset+Vector2(x*(cell_size.x+_padding.x),y*(cell_size.y+_padding.y)), cell_size)
+			var rect := Rect2(_offset + Vector2(x * (cell_size.x + _padding.x), y * (cell_size.y + _padding.y)), cell_size)
 			# Set the tile's region.
 			tile_set.tile_set_region(index, rect)
 	

@@ -6,6 +6,8 @@ Version: 0.1.0
 
 License: MIT
 
+![preview](screenshots/preview.png)
+
 ## Background
 
 I needed a quick way of trying out various pre-made tile sets, but constructing them by hand in the Godot editor was tedious and error prone.

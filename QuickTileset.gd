@@ -32,6 +32,7 @@ export (bool) var _guess_tile_size := true
 onready var _previous_cell_size := cell_size
 var _clear_existing_tileset := false
 
+# Executed when the script is added to the TileMap node.
 func _init() -> void:
 	# Only perform this method when running in the Godot editor.
 	if not Engine.is_editor_hint():
@@ -43,6 +44,7 @@ func _init() -> void:
 	if tile_set:
 		push_warning(tr("QuickTileset: A TileSet already exists in this TileMap. This will be overridden if any changes are made."))
 
+# Refreshes the TileSet.
 func _refresh_tileset() -> void:
 	# Only perform this method when running in the Godot editor.
 	if not Engine.is_editor_hint():
@@ -105,7 +107,7 @@ func _refresh_tileset() -> void:
 			var rect := Rect2(_offset + Vector2(x * (cell_size.x + _padding.x), y * (cell_size.y + _padding.y)), cell_size)
 			# Set the tile's region.
 			tile_set.tile_set_region(index, rect)
-	
+
 	property_list_changed_notify()
 
 # Setget handler for _texture
@@ -155,7 +157,7 @@ func _connect_setting_signal() -> void:
 	if not is_connected("settings_changed", self, "_on_settings_changed"):
 		var _discard := connect("settings_changed", self, "_on_settings_changed")
 
-# Attempt to discent the
+# Attempt to discern the cell size from the source texture's file name.
 func _guess_tile_size_from_texture() -> void:
 	# Get the list of sizes
 	var sizes := COMMON_TILE_SIZES

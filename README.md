@@ -2,7 +2,7 @@
 
 A quick and dirty script for creating complete [Godot](https://godotengine.org/) `TileSet`s without the hours of endless clicking.
 
-Version: 0.1.0
+Version: 0.1.1
 
 License: MIT
 
@@ -51,6 +51,9 @@ This script takes a texture containing a tile set, configure the cell size (and 
 An optional `QuickTileset.tscn` is also included if you want a simple scene to instance.
 
 ## Version history
+
+`0.1.1` - 2022-07-27
+- Added examples.
 
 `0.1.0` - 2022-07-24
 - Initial release.

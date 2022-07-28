@@ -14,6 +14,8 @@ I needed a quick way of trying out various pre-made tile sets (such as the [larg
 
 This script takes a texture containing a tile set, configure the cell size (and optional offset and per-cell padding) and it will quickly (and automatically) create a full `TileSet` of all tiles in the texture, which is then added to the `TileMap` node.
 
+> A minimalist version of this addon is available as a gist: [https://gist.github.com/paradrogue/634f1ee5b66968846478bf7bf21904c8](https://gist.github.com/paradrogue/634f1ee5b66968846478bf7bf21904c8)
+
 ## Features
 
 - Automatically creates a `TileSet` containing single tiles for each tile in the texture when the texture is added.

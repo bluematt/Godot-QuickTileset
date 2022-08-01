@@ -1,6 +1,8 @@
-# QuickTileset (for Godot)
+# QuickTileset (for [Godot Engine](https://godotengine.org/))
 
 A quick and dirty script for creating complete [Godot](https://godotengine.org/) `TileSet`s without the hours of endless clicking.
+
+Now available in the [Godot Engine Asset Library](https://godotengine.org/asset-library/asset): [https://godotengine.org/asset-library/asset/1400](https://godotengine.org/asset-library/asset/1400)
 
 Version: 0.1.1
 
@@ -56,6 +58,7 @@ An optional `QuickTileset.tscn` is also included if you want a simple scene to i
 
 `0.1.1` - 2022-07-27
 - Added examples.
+- Available in the Asset Library (as of 2022-08-01)
 
 `0.1.0` - 2022-07-24
 - Initial release.

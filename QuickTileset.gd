@@ -180,3 +180,8 @@ func _guess_tile_size_from_texture() -> void:
 				return
 
 	push_warning(tr("QuickTileset: Could not determine cell size.  Update cell_size manually."))
+
+func _get_configuration_warning() -> String:
+	if !_texture:
+		return tr("No tiled texture is supplied")
+	return ""

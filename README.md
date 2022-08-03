@@ -4,7 +4,7 @@ A quick and dirty script for creating complete [Godot](https://godotengine.org/)
 
 Now available in the [Godot Engine Asset Library](https://godotengine.org/asset-library/asset): [https://godotengine.org/asset-library/asset/1400](https://godotengine.org/asset-library/asset/1400)
 
-Version: 0.1.1
+Version: 0.1.2
 
 License: MIT
 
@@ -55,6 +55,9 @@ This script takes a texture containing a tile set, configure the cell size (and 
 An optional `QuickTileset.tscn` is also included if you want a simple scene to instance.
 
 ## Version history
+
+`0.1.2` - 2022-08-03
+- Added configuration warning.
 
 `0.1.1` - 2022-07-27
 - Added examples.

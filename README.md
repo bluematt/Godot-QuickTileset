@@ -25,7 +25,7 @@ This script takes a texture containing a tile set, configure the cell size (and 
 - The script can be detached after the `TileSet` has been configured.
 - The script can be re-added non-destructively, as long as no changes are made.
 - If the script it detached, the `TileSet` can be treated like a normal `TileSet` resource.
-- The script attempts to automatically discern the cell size iff the filename contains a "common" tile size in the form `<width>x<height>`, *e.g.* `grass_16x16.png` will be interpreted to contain 16×16 tiles.  Sizes assumed "common" are: 8, 12, 16, 18, 24, 32, 48, 64, 72, 96, 128, 192, 256.  Dimensions are not required to be square, *i.e.* `village_128x64.png` would also be automatically discovered with a cell size of 128×64 pixels. If the cell size is incorrectly determined from the texture's filename, the `cell size` can be corrected manually.
+- The script attempts to automatically discern the cell size **iff** the filename contains a "common" tile size in the form `<width>x<height>`, *e.g.* `grass_16x16.png` will be interpreted to contain 16×16 tiles.  Sizes assumed "common" are: 8, 12, 16, 18, 24, 32, 48, 64, 72, 96, 128, 192, 256.  Dimensions are not required to be square, *i.e.* `village_128x64.png` would also be automatically discovered with a cell size of 128×64 pixels. If the cell size is incorrectly determined from the texture's filename, the `cell size` can be corrected manually.
 
 ## Known limitations
 
@@ -40,6 +40,7 @@ This script takes a texture containing a tile set, configure the cell size (and 
 - Rectangular 2D tiles only.
 - Only tested with the following versions of Godot Engine:
   - 3.4.4.stable (MacOS)
+  - 3.5.1.stable (MacOS)
 
 ## How to use it
 
